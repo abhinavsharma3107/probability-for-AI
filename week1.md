@@ -33,3 +33,20 @@ P(E<sup>c</sup>) = 1 - P(E)
     1 = P(E) + P(E<sup>c</sup>) [**A2**]
     <br>
     P(E<sup>c</sup>) = 1 - P(E)
+
+- **Not Mutually Exclusive**: P(E or F) = P(E) + P(F) - P(E and F)
+
+there's some outcomes where both E and F are happening. and if you thought about just counting outcomes, if you add up all the outcomes in E and all the outcomes in F, you're kind of double-counting these outcomes in the middle.
+
+**Probability of >2 Events (OR)**
+
+<table>
+    <tr>
+        <td><img src="./assets/three_events_or.png" height="500" width="1200" alt="three_events_or"></td>
+        <td><img src="./assets/four_events_or.png" height="500" width="1200" alt="four_events_or"></td>
+    </tr>
+    <tr align="center">
+        <td>Three Events</td>
+        <td>Four Events</td>
+    </tr>
+</table>
