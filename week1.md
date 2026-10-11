@@ -24,7 +24,7 @@ P(E) + P(E<sup>c</sup>) = 1
 <br>
 P(E<sup>c</sup>) = 1 - P(E)
 
-**Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
+  - **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
 
   P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [**A3**]
   <br>
