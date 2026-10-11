@@ -4,7 +4,7 @@ probability has been a field for like hundreds and hundreds of years since peopl
 
 S = all ossible outcomes, E = the event
 
-- **Axiom 1**: 0 <= P(E) <= 1
+- **Axiom 1**: 0 ≤ P(E) ≤ 1
 
 it says that if you have any event E, the probability of E, it's got to be between 0 and 1. you cant have a probability of 2 or a negative probability
 
@@ -26,10 +26,12 @@ P(E<sup>c</sup>) = 1 - P(E)
 
     **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
 
-  => P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [by axiom 3, E and E<sup>c</sup> can't both happen]
+  P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [A3]
   <br>
-  => P(S) = P(E) + P(E<sup>c</sup>)
-  => 1 = P(E) + P(E<sup>c</sup>) [by axiom 2]
-  => P(E<sup>c</sup>) = 1 - P(E)
+  P(S) = P(E) + P(E<sup>c</sup>)
+  <br>
+  1 = P(E) + P(E<sup>c</sup>) [A2]
+  <br>
+  P(E<sup>c</sup>) = 1 - P(E)
 
 3. P(E and F): if E and F are not mutually exclusive
