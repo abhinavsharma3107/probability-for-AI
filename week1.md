@@ -24,14 +24,12 @@ P(E) + P(E<sup>c</sup>) = 1
 <br>
 P(E<sup>c</sup>) = 1 - P(E)
 
-    **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
+**Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
 
-  P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [A3]
+  P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [**A3**]
   <br>
   P(S) = P(E) + P(E<sup>c</sup>)
   <br>
-  1 = P(E) + P(E<sup>c</sup>) [A2]
+  1 = P(E) + P(E<sup>c</sup>) [**A2**]
   <br>
   P(E<sup>c</sup>) = 1 - P(E)
-
-3. P(E and F): if E and F are not mutually exclusive
