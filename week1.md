@@ -23,11 +23,11 @@ P(E or F) = P(E) + P(F)
 P(E) + P(E<sup>c</sup>) = 1
 => P(E<sup>c</sup>) = 1 - P(E)
 
-    - **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
+- **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
 
-    => P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [by axiom 3, E and E<sup>c</sup> can't both happen]
-    => P(S) = P(E) + P(E<sup>c</sup>)
-    => 1 = P(E) + P(E<sup>c</sup>) [by axiom 2]
-    => P(E<sup>c</sup>) = 1 - P(E)
+=> P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [by axiom 3, E and E<sup>c</sup> can't both happen]
+=> P(S) = P(E) + P(E<sup>c</sup>)
+=> 1 = P(E) + P(E<sup>c</sup>) [by axiom 2]
+=> P(E<sup>c</sup>) = 1 - P(E)
 
 3. P(E and F): if E and F are not mutually exclusive
