@@ -50,3 +50,13 @@ there's some outcomes where both E and F are happening. and if you thought about
         <td>Four Events</td>
     </tr>
 </table>
+
+**Conditional Paradigm**: All rules of probability hold when you condition
+
+P(I<sup>c</sup>) = 1 - P(I)
+<br>
+P(I<sup>c</sup>|H) = 1 - P(I|H)
+
+P(I or L) = P(I) + P(L) - P(I and L)
+<br>
+P(I or L|H) = P(I|H) + P(L|H) - P(I and L|H)
