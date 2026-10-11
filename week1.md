@@ -21,13 +21,13 @@ P(E or F) = P(E) + P(F)
 - **Complement**: the chance E does not happen, denoted by P(E<sup>c</sup>)
 
 P(E) + P(E<sup>c</sup>) = 1
-<hr>
+<br>
 P(E<sup>c</sup>) = 1 - P(E)
 
     **Proof of Complement (Using Axioms)**: P(E<sup>c</sup>) = 1 - P(E)
 
   => P(E or E<sup>c</sup>) = P(E) + P(E<sup>c</sup>) [by axiom 3, E and E<sup>c</sup> can't both happen]
-  <hr>
+  <br>
   => P(S) = P(E) + P(E<sup>c</sup>)
   => 1 = P(E) + P(E<sup>c</sup>) [by axiom 2]
   => P(E<sup>c</sup>) = 1 - P(E)
