@@ -4,10 +4,10 @@ In the trial of the Pfizer COVID-19 vaccine, among people aged 16 to 55, 78% had
 
 **Solution 1**
 
-keyword → at least one → OR
+<u>keyword</u> → at least one → OR
 <br>
 <br>
-formula → probability of union of independent events
+<u>formula</u> → probability of union of independent events
 <br>
 P(A or B) = P(A) + P(B) - P(A and B)
 <br>
