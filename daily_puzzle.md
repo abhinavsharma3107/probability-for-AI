@@ -13,7 +13,10 @@ P(A or B) = P(A) + P(B) - P(A and B)
 <br>
 <br>
 P(A = sore) = 0.78
+<br>
 P(B = tired) = 0.59
+<br>
+<br>
 P(A and B = both sore and tired) = P(A) x P(B) = 0.78 x 0.59 = 0.4602
 <br>
 P(A or B = either sore or tired) = 0.78 + 0.59 - 0.4602 = **0.9098**
@@ -33,6 +36,7 @@ P(B<sup>c</sup> = not tired) = 1 - 0.59 = 0.41
 P(A<sup>c</sup> and B<sup>c</sup> = niether sore nor tired) = 0.22 x 0.41 = 0.0902
 <br>
 1 - P(A<sup>c</sup> and B<sup>c</sup>) = P(A or B) [De Morgan's Law]
+<br>
 1 - 0.0902 = **0.9098**
 
 ## Daily Puzzle 2 (October 14)
