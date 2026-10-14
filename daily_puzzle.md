@@ -6,8 +6,11 @@ In the trial of the Pfizer COVID-19 vaccine, among people aged 16 to 55, 78% had
 
 keyword → at least one → OR
 <br>
+<br>
 formula → probability of union of independent events
+<br>
 P(A or B) = P(A) + P(B) - P(A and B)
+<br>
 <br>
 P(A = sore) = 0.78
 P(B = tired) = 0.59
