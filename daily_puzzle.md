@@ -21,17 +21,19 @@ P(A or B = either sore or tired) = 0.78 + 0.59 - 0.4602 = **0.9098**
 **Solution 2**
 
 P(A = sore) = 0.78
+<br>
 P(A<sup>c</sup> = not sore) = 1 - 0.78 = 0.22
 <br>
+<br>
 P(B = tired) = 0.59
+<br>
 P(B<sup>c</sup> = not tired) = 1 - 0.59 = 0.41
+<br>
 <br>
 P(A<sup>c</sup> and B<sup>c</sup> = niether sore nor tired) = 0.22 x 0.41 = 0.0902
 <br>
 1 - P(A<sup>c</sup> and B<sup>c</sup>) = P(A or B) [De Morgan's Law]
 1 - 0.0902 = **0.9098**
-
----
 
 ## Daily Puzzle 2 (October 14)
 
@@ -40,9 +42,11 @@ P(A<sup>c</sup> and B<sup>c</sup> = niether sore nor tired) = 0.22 x 0.41 = 0.09
 **Solution**
 
 P(S = any single flight failure) = 0.01
+<br>
 P(S<sup>c</sup> = any single flight success) = 1 - 0.01 = 0.99
 <br>
 since each flight behaves independently, for 100 flights,
+<br>
 <br>
 P(100 safe flights) = (0.99)<sup>100</sup> ≈ 0.3660
 <br>
