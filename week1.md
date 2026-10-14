@@ -1,4 +1,4 @@
-## [Week 1](https://www.youtube.com/watch?v=Q3ar5nFVuiQ)
+## [Week 1.1](https://www.youtube.com/watch?v=Q3ar5nFVuiQ)
 
 probability has been a field for like hundreds and hundreds of years since people got addicted to gambling basically. but it wasnt until like 1900s that people realized it and proved it was actually a part of mathematics and people started to rigorously show why everything in probability was true. and there's this wonderful mathematician, his name is kolmogorov and he came up with what we called the axioms of probability. he said, "hey guys, if you assume these three things are true, I'm going to be able to prove every rule that you see in probability for AI". him and his friends were able to prove that. and it's true. mathematially, if you agree with these three things, I would be able to prove anything in probability theory just from these three assumptions
 
@@ -60,3 +60,77 @@ P(I<sup>c</sup>|H) = 1 - P(I|H)
 P(I or L) = P(I) + P(L) - P(I and L)
 <br>
 P(I or L|H) = P(I|H) + P(L|H) - P(I and L|H)
+
+---
+
+## [Week 1.2](https://www.youtube.com/watch?v=7WmJvrnJh-U)
+
+imagine that you're a biologist and you're trying to understand how different genes influence a trait. so whether or not something is shown and you're gonna give some data to an AI agent and you say "AI agent, I think some genes are influencing a trait. Can you figure out how?" and to the AI agent, you give a whole bunch of data. so all of this data comes from bats. and you have a 100,000 bats. for every single bat, you know whether or not the bat has gene one, gene two, ..., gene 5 and you know if it has the trait you care about, like whether it could carry a particular disease. so you have these six observations per bat and you have a 100,000 bats. you send it to your AI agent. Your AI agent pours over the data and it comes back to you with this answer. it says, "biologist, i think i undersatnd how these genes influence this trait. i think gene three and gene four dont influence the trait at all. but i do think that if the bat has gene five, they're more likely to have gene two. and if they have gene one and gene two, that's what influences whether or not they show the trait. and it comes up with the whole probability explanation for why this hypothesis is true.
+
+<table>
+    <tr>
+        <td><img src="./assets/discovered_hypothesis_1.png" height="500" width="1200" alt="discovered_hypothesis_1"></td>
+        <td><img src="./assets/discovered_hypothesis_2.png" height="500" width="1200" alt="discovered_hypothesis_2"></td>
+    </tr>
+</table>
+
+we know, P(E|F) = P(E and F) / P(F)
+
+**Chain Rule (defn.)**
+P(E and F) = P(E|F) • P(F)
+
+<table>
+    <tr>
+        <td><img src="./assets/babel_image_archive_1.png" height="500" width="1200" alt="babel_image_archive_1"></td>
+        <td><img src="./assets/babel_image_archive_2.png" height="500" width="1200" alt="babel_image_archive_2"></td>
+    </tr>
+    <tr align="center">
+        <td>640x416, 4096 colors each</td>
+        <td>P(Ollie) = ?</td>
+    <tr>
+</table>
+
+here's a 640x416 pixel image, so here's a picture. each pixel was generated randomly and we've generated a whole bunch of these. every single could be one of 4,000 colors. and the thing that they said was so interesting about this art piece is that inside here, you might find any pciture like since each pixel is generated randomly it's possible that you get this picture but it's also possible you would've generated this beautiful image of Ollie. it's possible that somewhere in this database of randomly chosen pixels, there is this exact image. if you picked an image at random, what is the chance that all those colored pixels would be exactly this one? like, i know it's small but can we figure out exactly how small?
+
+<table>
+    <tr>
+        <td><img src="./assets/babel_image_archive_sub_1.png" height="500" width="1200" alt="babel_image_archive_sub_1"></td>
+        <td><img src="./assets/babel_image_archive_sub_2.png" height="500" width="1200" alt="babel_image_archive_sub_2"></td>
+    </tr>
+    <tr align="center">
+        <td>4 pixels, black or white</td>
+        <td>1600 simulations</td>
+    <tr>
+</table>
+
+imagine everything's black and white and we're just going to take a little bit of a Ollie's cheek. so, in this little piece of an image, let's say we've 2x2 pixels, so four pixels. top two are white and bottom two are black. i'm going to start with an easier question. if we generate 2x2 pixel grid, what's the chance I would get an exact match to this 2x2 pixel grid? so, if i generate random pixel grids where each pixel can be black or white, what's the chance that I get two white on the top and two black on the bottom? so if i repeat this process 1,600 times, 100 of those times I got exactly two whites and two blacks. 100/1600 ≈ 1/16 ≈ 0.0625
+
+but there's a way to figure this out without simulation. if i said whats the probability of you matching excatly? if i wanna get a 2x2 grid to exactly match,
+i first need the top left pixel to exactly match = 1/2
+then bottom left = 1/2
+then top right = 1/2
+and finally bottom left = 1/2
+
+1/2 • 1/2 • 1/2 • 1/2 = 1/16
+
+but how come we get to multiply these probabilities? like how come we got to decompose this problem of does this whole picture match into just thinking about each of the pixels on they own?
+
+**Independence**
+Two events A and B are called independent if:
+P(A|B) = P(A)
+
+above equation is saying that, on the right side, is your belief that A happens and on the left side is your belief that A happens if I told you B occured. the fact that they're equal means something important. it means that knowing B didnt change your belief that A would occur. that's what independence mean, knowing one event doesn't change your belief in the other event. if this is not true, you call events **dependent**
+
+if A and B are independent:
+P(A and B) = P(A|B) • P(B) [chain rule]
+P(A|B) = P(A) [independence rule]
+
+P(A and B) = P(A) • P(B)
+
+---
+
+## [Week 1.3]
+
+---
+
+## [Week 1.4]
