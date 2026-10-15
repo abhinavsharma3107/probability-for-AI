@@ -2,9 +2,12 @@
 
 > All rights reserved to Stanford. This is just my progress depicting completion of the course and quick notes for others taking it.
 
+![stanford_pai](/assets/stanford_pai.png)
+
 ## Certificate
 
-![stanford_pai](/assets/stanford_pai.png)
+![cert](/assets/abhinav_sharma_pai.png)
+
 
 ## Portfolio
 
