@@ -1,4 +1,4 @@
-## [Pre-Class 1](https://www.youtube.com/watch?v=FVUL6inwt84)
+## [Probability](https://www.youtube.com/watch?v=FVUL6inwt84)
 
 **Learning Goals**
 1. probability, formally
@@ -59,7 +59,7 @@
 
 ---
 
-## [Pre-Class 2](https://www.youtube.com/watch?v=H85YOG-cNeQ)
+## [Conditional Probability](https://www.youtube.com/watch?v=H85YOG-cNeQ)
 
 **Learning Goals**
 1. conditional probability

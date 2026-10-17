@@ -170,11 +170,14 @@ P((H1 and H2) or (T1 and T2))
 P(H1 and H2) + (T1 and T2)
 <br>
 P(H1) x P(H2) + P(T1) x P(T2)
+<br>
 (0.6 x 0.6) + ((1 - 0.6) x (1 - 0.6)) = 0.36 + 0.16 = **0.52**
 
 ### Problem 2
 
 a self-driving car has lidar, radar and camera. each sensor fails independently with probability 0.01. what is the chance at at least one sensor is working?
+
+**Solution**
 
 P(failure) = 0.01
 <br>
