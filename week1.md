@@ -1,4 +1,4 @@
-## [Week 1.1](https://www.youtube.com/watch?v=Q3ar5nFVuiQ)
+## [Axioms](https://www.youtube.com/watch?v=Q3ar5nFVuiQ)
 
 probability has been a field for like hundreds and hundreds of years since people got addicted to gambling basically. but it wasnt until like 1900s that people realized it and proved it was actually a part of mathematics and people started to rigorously show why everything in probability was true. and there's this wonderful mathematician, his name is kolmogorov and he came up with what we called the axioms of probability. he said, "hey guys, if you assume these three things are true, I'm going to be able to prove every rule that you see in probability for AI". him and his friends were able to prove that. and it's true. mathematially, if you agree with these three things, I would be able to prove anything in probability theory just from these three assumptions
 
@@ -63,7 +63,7 @@ P(I or L|H) = P(I|H) + P(L|H) - P(I and L|H)
 
 ---
 
-## [Week 1.2](https://www.youtube.com/watch?v=7WmJvrnJh-U)
+## [Independence](https://www.youtube.com/watch?v=7WmJvrnJh-U)
 
 imagine that you're a biologist and you're trying to understand how different genes influence a trait. so whether or not something is shown and you're gonna give some data to an AI agent and you say "AI agent, I think some genes are influencing a trait. Can you figure out how?" and to the AI agent, you give a whole bunch of data. so all of this data comes from bats. and you have a 100,000 bats. for every single bat, you know whether or not the bat has gene one, gene two, ..., gene 5 and you know if it has the trait you care about, like whether it could carry a particular disease. so you have these six observations per bat and you have a 100,000 bats. you send it to your AI agent. Your AI agent pours over the data and it comes back to you with this answer. it says, "biologist, i think i undersatnd how these genes influence this trait. i think gene three and gene four dont influence the trait at all. but i do think that if the bat has gene five, they're more likely to have gene two. and if they have gene one and gene two, that's what influences whether or not they show the trait. and it comes up with the whole probability explanation for why this hypothesis is true.
 
@@ -90,7 +90,7 @@ P(E and F) = P(E|F) • P(F)
     <tr>
 </table>
 
-here's a 640x416 pixel image, so here's a picture. each pixel was generated randomly and we've generated a whole bunch of these. every single could be one of 4,000 colors. and the thing that they said was so interesting about this art piece is that inside here, you might find any pciture like since each pixel is generated randomly it's possible that you get this picture but it's also possible you would've generated this beautiful image of Ollie. it's possible that somewhere in this database of randomly chosen pixels, there is this exact image. if you picked an image at random, what is the chance that all those colored pixels would be exactly this one? like, i know it's small but can we figure out exactly how small?
+here's a 640x416 pixel image, so here's a picture. each pixel was generated randomly and we've generated a whole bunch of these. every single could be one of 4,096 colors. and the thing that they said was so interesting about this art piece is that inside here, you might find any pciture like since each pixel is generated randomly it's possible that you get this picture but it's also possible you would've generated this beautiful image of Ollie. it's possible that somewhere in this database of randomly chosen pixels, there is this exact image. if you picked an image at random, what is the chance that all those colored pixels would be exactly this one? like, i know it's small but can we figure out exactly how small?
 
 <table>
     <tr>
@@ -122,15 +122,76 @@ P(A|B) = P(A)
 above equation is saying that, on the right side, is your belief that A happens and on the left side is your belief that A happens if I told you B occured. the fact that they're equal means something important. it means that knowing B didnt change your belief that A would occur. that's what independence mean, knowing one event doesn't change your belief in the other event. if this is not true, you call events **dependent**
 
 if A and B are independent:
+<br>
+<br>
 P(A and B) = P(A|B) • P(B) [chain rule]
+<br>
 P(A|B) = P(A) [independence rule]
-
+<br>
+<br>
 P(A and B) = P(A) • P(B)
 
+what is the chance of you generating exactly this picture of Ollie? well, lets take the first few pixels. if you generated a random picture and you chose one pixel, there's 4096 colors to pick from and the chance you chose exactly mine is exactly 1 in 4096. equally likely outcome thing. so, the chance of getting the first pixel right is very small. it's about 1 in 4096. but if you asked not what's the chance that you get the first pixel right but what's the chance you get all 640x416 = 266,240 pixels right?
+
+P(one pixel right) = 1/4096
+<br>
+P(Ollie) = (1/4096)<sup>266,240</sup> ≈ **1.9 x 10<sup>-961,755</sup>**
+<br>
+<br>
+
+each pixel moves the decimal point about 3.6 places.
+
+**Truths about Independence**
+
+1. if A is independent of B, B is independent of A
+2. if A is independent of B, A is also independent of B<sup>c</sup>
+
+### Problem 1
+
+you flip two frisbees. each lands "heads" with probability 0.6, independently. the frisbees are "even" if both land heads or both land tails. what is the probability that the frisbees are even?
+
+**Solution**
+
+P(even) = P(both heads or both tails)
+<br>
+<br>
+H1 = frisbee 1 is heads
+H2 = frisbee 2 is heads
+<br>
+<br>
+T1 = frisbee 1 is tails
+T2 = frisbee 2 is tails
+<br>
+<br>
+OR → are they mutually exclusive? → YES (both heads and both tails can't occur at the same time)
+<br>
+P((H1 and H2) or (T1 and T2))
+<br>
+P(H1 and H2) + (T1 and T2)
+<br>
+P(H1) x P(H2) + P(T1) x P(T2)
+(0.6 x 0.6) + ((1 - 0.6) x (1 - 0.6)) = 0.36 + 0.16 = **0.52**
+
+### Problem 2
+
+a self-driving car has lidar, radar and camera. each sensor fails independently with probability 0.01. what is the chance at at least one sensor is working?
+
+P(failure) = 0.01
+<br>
+P(success) = 0.99
+<br>
+<br>
+P(at least one works) = P(L or R or CM) → are they mutually exclusive? → NO
+<br>
+P(at least one works) = 1 - P(all three fail) = 1 - (L <sup>c</sup> and R <sup>c</sup> and CM <sup>c</sup>)
+<br>
+1 - (0.01 x 0.01 x 0.01) = 1 - 0.000001 ≈ **0.999999**
 ---
 
-## [Week 1.3]
+## [Bayes Theorem]()
 
 ---
 
-## [Week 1.4]
+## [Lecture]()
+
+If I give a LLM the exact same prompt twice, should I expect the same answer? Is it a bug or a feature?

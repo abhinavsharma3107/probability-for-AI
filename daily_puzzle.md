@@ -54,3 +54,12 @@ since each flight behaves independently, for 100 flights,
 P(100 safe flights) = (0.99)<sup>100</sup> ≈ 0.3660
 <br>
 P(failing atleast 1 flight) = 1 - 0.37 = **0.63**
+
+## Daily Puzzle 3 (October 15)
+## Daily Puzzle 4 (October 16)
+## Daily Puzzle 5 (October 17)
+## Daily Puzzle 6 (October 18)
+## Daily Puzzle 7 (October 19)
+## Daily Puzzle 8 (October 20)
+## Daily Puzzle 9 (October 21)
+## Daily Puzzle 10 (October 22)
