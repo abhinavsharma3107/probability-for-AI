@@ -186,9 +186,35 @@ P(success) = 0.99
 <br>
 P(at least one works) = P(L or R or CM) → are they mutually exclusive? → NO
 <br>
-P(at least one works) = 1 - P(all three fail) = 1 - (L <sup>c</sup> and R <sup>c</sup> and CM <sup>c</sup>)
+P(at least one works) = 1 - P(all three fail) = 1 - (L<sup>c</sup> and R<sup>c</sup> and CM<sup>c</sup>)
 <br>
 1 - (0.01 x 0.01 x 0.01) = 1 - 0.000001 ≈ **0.999999**
+
+### Problem 3
+
+why is the internet so reliable? like why is it so consistent that i can get to google? the answer is there's lots of paths between your computer and google's computer. so you you might not know this but there's routers in the internet. let's say each path is represented by one router. assume that i tell you the probability that this router works is P1. i'm not going to bother with saying what P1 is. i'm using use variable but that's like some number. it could be 0.01, could be 0.5. there's some probability that router 1 works. there is some probability that router two works and there's some probability that router n works. to send a message from A to B, you dont need all of them to work. you need at least one path to exist. so whats the probability that there's atleast one path from A to B?
+
+**Solution**
+
+n independent routers
+<br>
+R<sub>i</sub>: router i works
+<br>
+P(R<sub>i</sub>) = p<sub>i>
+<br>
+E: a path from A to B works
+<br>
+<br>
+P(at least one route goes from A to B) = 1 - P(no path goes from A to B)
+<br>
+1 - P(R<sub>1</sub><sup>c</sup> and R<sub>2</sub><sup>c</sup> and ... and R<sub>n</sub><sup>c</sup> and)
+<br>
+1 - P(R<sub>1</sub><sup>c</sup>) x P(R<sub>2</sub><sup>c</sup>) ... P(R<sub>n</sub><sup>c</sup>)
+<br>
+1 - [1 - p<sub>1</sub>] x [1 - p<sub>2</sub>] ... [1 - p<sub>n</sub>]
+<br>
+1 - ∏<sub>i = 1</sub><sup> n </sup> (1 - p<sub>i</sub>)
+
 ---
 
 ## [Bayes Theorem]()
